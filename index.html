@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRASFORM</title>
+    <style>
+    .bg{
+        background-color: rgb(0,255,255);
+        border: 5px solid black;
+        height:300px;
+        width:800px;
+        padding: 20px;
+    }
+    .right:checked~img{
+        transform: translate(50px);
+    }
+    .rotate10:checked~img{
+        transform: rotate(10deg);
+    }
+    .rotate20:checked~img{
+        transform: rotate(20deg);
+    }
+    .rotate40:checked~img{
+        transform: rotate(40deg);
+        
+    }
+    .rotate60:checked~img{
+        transform: rotate(60deg);
+    }
+    .rotate80:checked~img{
+        transform: rotate(80deg);
+    }
+    .rotate100:checked~img{
+        transform: rotate(100deg);
+    }
+    .skew20:checked~img{
+        transform: skew(20deg,20deg);
+    }
+    .skew40:checked~img{
+        transform: skew(40deg,40deg);
+    }
+    .skew30:checked~img{
+        transform: skewX(30deg);
+    }
+    .skew50:checked~img{
+        transform: skewX(50deg);
+    }
+    .skew80:checked~img{
+        transform: skewX(80deg);
+    }
+    .matrix20:checked~img{
+        transform: matrix(0.866,0.7,-0.8,0.866,0,0);
+    }
+    .matrix40:checked~img{
+        transform: matrix(0.586,0.8,-0.8,0.586,0,0);
+    }
+    .matrix80:checked~img{
+        transform: matrix(0.586,0.8,-0.8,0.586,40,30);
+    }
+</style>
+</head>
+<body>
+    <div>
+        <h1>TRASFORM :</h1>
+        <div class="bg">     
+            <input type="radio" name="name"  class="right"/>right<br>
+            <input type="radio" name="name"  class="rotate10"/>transform: rotate(10deg):<br>
+            <input type="radio" name="name"  class="rotate20"/>transform: rotate(20deg):<br>
+            <input type="radio" name="name"  class="rotate40"/>transform: rotate(40deg);<br>
+            <input type="radio" name="name"  class="rotate60"/>transform: rotate(60deg);<br>
+            <input type="radio" name="name"  class="rotate80"/>transform: rotate(80deg):<br>
+            <input type="radio" name="name"  class="rotate100"/>transform: rotate(100deg):<br>
+            <input type="radio" name="name"  class="skew20"/>transform: skew(20deg,20deg);<br>
+            <input type="radio" name="name"  class="skew40"/>transform: skew(40deg,40deg);<br>
+            <input type="radio" name="name"  class="skew30"/>transform: skewX(30deg);<br>
+            <input type="radio" name="name"  class="skew50"/>transform: skewX(50deg);<br>
+            <input type="radio" name="name"  class="skew80"/>transform: skewX(80deg);<br>
+            <input type="radio" name="name"  class="matrix20"/>transform: matrix20(0.866,0.7,-0.8,0.866,0,0);<br>
+            <input type="radio" name="name"  class="matrix40"/>transform: matrix40(0.586,0.8,-0.8,0.586,0,0);<br>
+            <input type="radio" name="name"  class="matrix80"/>transform: matrix80(0.586,0.8,-0.8,0.586,40,30);<br>
+            <img src="../CSSPRACTICE/dp1.jpeg" height="200px" width="200px" style="margin-left: 500px; margin-top: -300px; margin-bottom: 500px;"/>
+        </div>
+    </div>
+</body>
+</html>
